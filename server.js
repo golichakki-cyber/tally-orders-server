@@ -26,7 +26,7 @@ app.post("/order", async (req, res) => {
         item: item,
         qty: qty,
         rate: rate,
-        customer: customer,
+        customers: customer,
         status: "pending"
       }
     ])
