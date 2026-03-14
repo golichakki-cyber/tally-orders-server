@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
 app.post("/order", async (req, res) => {
 
-  const { item, qty, rate, customer } = req.body
+  const { item, qty, rate, customers } = req.body
 
   const { data, error } = await supabase
     .from("orders")
@@ -26,7 +26,7 @@ app.post("/order", async (req, res) => {
         item: item,
         qty: qty,
         rate: rate,
-        customers: customer,
+        customers: customers,
         status: "pending"
       }
     ])
