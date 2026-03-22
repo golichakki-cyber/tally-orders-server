@@ -1,0 +1,14 @@
+{
+  "drivers": [
+    {
+      "name": "test driver",
+      "phone": "whatsapp:+919347175169",
+      "active": true
+    },
+    {
+      "name": "Driver 2",
+      "phone": "whatsapp:+918800112233",
+      "active": false
+    }
+  ]
+}
